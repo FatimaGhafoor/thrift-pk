@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "category": "clothes",
+    "brand": "Outfitters",
+    "type": "T-shirt",
+    "size": "M",
+    "price": 1200,
+    "image": "url",
+    "conditionCategory": "Mint",
+    "conditionRating": 10
+  },
+  {
+    "id": 2,
+    "category": "shoes",
+    "brand": "Stylo",
+    "type": "Sneakers",
+    "size": 37,
+    "price": 2000,
+    "image": "url",
+    "conditionCategory": "Mint",
+    "conditionRating": 9
+  },
+  {
+    "id": 3,
+    "category": "clothes",
+    "brand": "Levi's",
+    "type": "Jeans",
+    "size": "S",
+    "price": 4500,
+    "image": "url",
+    "conditionCategory": "Gently Used",
+    "conditionRating": 8
+  },
+  {
+    "id": 4,
+    "category": "clothes",
+    "brand": "Zara",
+    "type": "Jacket",
+    "size": "L",
+    "price": 8500,
+    "image": "url",
+    "conditionCategory": "Mint",
+    "conditionRating": 10
+  },
+  {
+    "id": 5,
+    "category": "shoes",
+    "brand": "Nike",
+    "type": "Sneakers",
+    "size": 42,
+    "price": 9500,
+    "image": "url",
+    "conditionCategory": "Gently Used",
+    "conditionRating": 9
+  },
+  {
+    "id": 6,
+    "category": "clothes",
+    "brand": "Breakout",
+    "type": "Shirt",
+    "size": "S",
+    "price": 2800,
+    "image": "url",
+    "conditionCategory": "Gently Used",
+    "conditionRating": 7
+  }
+]
