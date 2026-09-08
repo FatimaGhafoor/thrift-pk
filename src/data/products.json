@@ -6,7 +6,7 @@
     "type": "T-shirt",
     "size": "M",
     "price": 1200,
-    "image": "url",
+    "image": "/products/outfitters-tshirt.jpg",
     "conditionCategory": "Mint",
     "conditionRating": 10
   },
@@ -17,7 +17,7 @@
     "type": "Sneakers",
     "size": 37,
     "price": 2000,
-    "image": "url",
+    "image": "/products/stylo-sneakers.jpg",
     "conditionCategory": "Mint",
     "conditionRating": 9
   },
@@ -28,7 +28,7 @@
     "type": "Jeans",
     "size": "S",
     "price": 4500,
-    "image": "url",
+    "image": "/products/levis-jeans.jpg",
     "conditionCategory": "Gently Used",
     "conditionRating": 8
   },
@@ -39,7 +39,7 @@
     "type": "Jacket",
     "size": "L",
     "price": 8500,
-    "image": "url",
+    "image": "/products/zara-jacket.jpg",
     "conditionCategory": "Mint",
     "conditionRating": 10
   },
@@ -50,7 +50,7 @@
     "type": "Sneakers",
     "size": 42,
     "price": 9500,
-    "image": "url",
+    "image": "/products/nike-sneakers.jpg",
     "conditionCategory": "Gently Used",
     "conditionRating": 9
   },
@@ -61,7 +61,7 @@
     "type": "Shirt",
     "size": "S",
     "price": 2800,
-    "image": "url",
+    "image": "/products/breakout-shirt.jpg",
     "conditionCategory": "Gently Used",
     "conditionRating": 7
   }
