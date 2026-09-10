@@ -1,4 +1,4 @@
-export const FilterSidebar = () => {
+export const FilterSidebar = ({ setSelectedCategory }) => {
   return (
     <aside className="w-1/4 bg-white border rounded-lg p-4">
       <h2 className="text-xl font-semibold text-gray-900 mb-6">Filters</h2>
@@ -8,11 +8,19 @@ export const FilterSidebar = () => {
 
         <div className="space-y-2">
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="clothes" />
+            <input
+              type="checkbox"
+              value="clothes"
+              onChange={(e) => setSelectedCategory(e.target.value)}
+            />
             Clothes
           </label>
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="shoes" />
+            <input
+              type="checkbox"
+              value="shoes"
+              onChange={(e) => setSelectedCategory(e.target.value)}
+            />
             Shoes
           </label>
         </div>

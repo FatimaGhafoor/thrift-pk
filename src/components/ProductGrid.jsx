@@ -1,10 +1,14 @@
 import { ProductCard } from "./ProductCard";
 import productData from "../data/products.json";
-export const ProductGrid = () => {
+export const ProductGrid = ({ selectedCategory }) => {
+  const filteredProducts = productData.filter((product) => {
+    return selectedCategory === "" || product.category === selectedCategory;
+  });
+
   return (
     <div className="flex-1 bg-white border rounded-lg p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {productData.map((product) => {
+        {filteredProducts.map((product) => {
           return <ProductCard key={product.id} product={product} />;
         })}
       </div>
