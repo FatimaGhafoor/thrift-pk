@@ -7,6 +7,7 @@ import { FilterSidebar } from "./components/FilterSidebar";
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
+  const [selectedCondition, setSelectedCondition] = useState("");
   return (
     <>
       <Navbar />
@@ -15,10 +16,12 @@ const App = () => {
         <FilterSidebar
           setSelectedCategory={setSelectedCategory}
           setSelectedSize={setSelectedSize}
+          setSelectedCondition={setSelectedCondition}
         />
         <ProductGrid
           selectedCategory={selectedCategory}
           selectedSize={selectedSize}
+          selectedCondition={selectedCondition}
         />
       </div>
     </>

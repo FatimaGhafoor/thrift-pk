@@ -1,4 +1,8 @@
-export const FilterSidebar = ({ setSelectedCategory, setSelectedSize }) => {
+export const FilterSidebar = ({
+  setSelectedCategory,
+  setSelectedSize,
+  setSelectedCondition,
+}) => {
   return (
     <aside className="w-1/4 bg-white border rounded-lg p-4">
       <h2 className="text-xl font-semibold text-gray-900 mb-6">Filters</h2>
@@ -64,12 +68,20 @@ export const FilterSidebar = ({ setSelectedCategory, setSelectedSize }) => {
 
         <div className="space-y-2">
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="Mint" />
+            <input
+              type="checkbox"
+              value="Mint"
+              onChange={(e) => setSelectedCondition(e.target.value)}
+            />
             Mint
           </label>
 
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="Gently Used" />
+            <input
+              type="checkbox"
+              value="Gently Used"
+              onChange={(e) => setSelectedCondition(e.target.value)}
+            />
             Gently Used
           </label>
         </div>
