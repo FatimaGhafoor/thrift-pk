@@ -1,4 +1,4 @@
-export const FilterSidebar = ({ setSelectedCategory }) => {
+export const FilterSidebar = ({ setSelectedCategory, setSelectedSize }) => {
   return (
     <aside className="w-1/4 bg-white border rounded-lg p-4">
       <h2 className="text-xl font-semibold text-gray-900 mb-6">Filters</h2>
@@ -31,15 +31,30 @@ export const FilterSidebar = ({ setSelectedCategory }) => {
 
         <div className="space-y-2">
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="S" />S
+            <input
+              type="checkbox"
+              value="S"
+              onChange={(e) => setSelectedSize(e.target.value)}
+            />
+            S
           </label>
 
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="M" />M
+            <input
+              type="checkbox"
+              value="M"
+              onChange={(e) => setSelectedSize(e.target.value)}
+            />
+            M
           </label>
 
           <label className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" value="L" />L
+            <input
+              type="checkbox"
+              value="L"
+              onChange={(e) => setSelectedSize(e.target.value)}
+            />
+            L
           </label>
         </div>
       </div>
