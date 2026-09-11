@@ -2,6 +2,8 @@ export const FilterSidebar = ({
   setSelectedCategory,
   setSelectedSize,
   setSelectedCondition,
+  setMinPrice,
+  setMaxPrice,
 }) => {
   return (
     <aside className="w-1/4 bg-white border rounded-lg p-4">
@@ -93,12 +95,20 @@ export const FilterSidebar = ({
         <div className="space-y-2">
           <label className="flex items-center gap-2 text-sm text-gray-700">
             Min Price
-            <input type="number" placeholder="Min" />
+            <input
+              type="number"
+              placeholder="Min"
+              onChange={(e) => setMinPrice(e.target.value)}
+            />
           </label>
 
           <label className="flex items-center gap-2 text-sm text-gray-700">
             Max Price
-            <input type="number" placeholder="Max" />
+            <input
+              type="number"
+              placeholder="Max"
+              onChange={(e) => setMaxPrice(e.target.value)}
+            />
           </label>
         </div>
       </div>

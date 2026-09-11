@@ -4,13 +4,17 @@ export const ProductGrid = ({
   selectedCategory,
   selectedSize,
   selectedCondition,
+  minPrice,
+  maxPrice,
 }) => {
   const filteredProducts = productData.filter((product) => {
     return (
       (selectedCategory === "" || product.category === selectedCategory) &&
       (selectedSize === "" || product.size === selectedSize) &&
       (selectedCondition === "" ||
-        product.conditionCategory === selectedCondition)
+        product.conditionCategory === selectedCondition) &&
+      (minPrice === "" || product.price >= Number(minPrice)) &&
+      (maxPrice === "" || product.price <= Number(maxPrice))
     );
   });
 

@@ -8,6 +8,8 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedCondition, setSelectedCondition] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
   return (
     <>
       <Navbar />
@@ -17,11 +19,15 @@ const App = () => {
           setSelectedCategory={setSelectedCategory}
           setSelectedSize={setSelectedSize}
           setSelectedCondition={setSelectedCondition}
+          setMinPrice={setMinPrice}
+          setMaxPrice={setMaxPrice}
         />
         <ProductGrid
           selectedCategory={selectedCategory}
           selectedSize={selectedSize}
           selectedCondition={selectedCondition}
+          minPrice={minPrice}
+          maxPrice={maxPrice}
         />
       </div>
     </>
